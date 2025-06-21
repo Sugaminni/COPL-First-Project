@@ -16,7 +16,7 @@ public class Scanner {
     // Stores all unique identifiers (variable names)
     private final List<String> identifiers = new ArrayList<>();
 
-    // Stores all unique keywords actually used in the source file
+    // Stores all unique keywords used in the source file
     private final List<String> keywordsUsed = new ArrayList<>();
 
     // return the list of all tokens found in the source file
