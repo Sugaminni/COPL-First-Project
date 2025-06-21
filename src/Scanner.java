@@ -46,11 +46,11 @@ public class Scanner {
         // Makes pattern match words, operators, and symbols
         Pattern tokenPattern = Pattern.compile("\\w+|==|!=|<=|>=|[+\\-*/=<>;(){}]");
 
-        // Reads the file line-by-line
+        // Reads the file line-by-line and checks for a match
         while ((line = reader.readLine()) != null) {
             Matcher matcher = tokenPattern.matcher(line);
 
-            // Extract all tokens from the line
+            // Extract all tokens from the line if match is found
             while (matcher.find()) {
                 String token = matcher.group();
 
