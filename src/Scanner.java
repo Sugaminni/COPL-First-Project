@@ -8,7 +8,7 @@ import java.util.regex.*;
 public class Scanner {
 
     // Set of recognized keywords in the SCL language subset
-    private static final Set<String> KEYWORDS = Set.of("if", "else", "while", "print", "int", "float", "char", "return");
+    private static final Set<String> KEYWORDS = Set.of("if", "else", "while", "print", "display", "define", "return", "int", "float", "double", "char", "integer");
 
     // Stores all tokens found in the file
     private final List<Token> tokens = new ArrayList<>();
